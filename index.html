@@ -2,19 +2,31 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>CPRタイミングゲーム</title>
+  <title>CPRテンポ学習ゲーム</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>CPRタイミング学習ゲーム</h1>
-<p id="instruction">胸骨圧迫を行ってください</p>
-<p id="counter">0 / 30</p>
+<h1>CPR 胸骨圧迫テンポ学習ゲーム</h1>
 
-<div class="person">
-  <div id="mouth">口</div>
-  <div id="chest">胸</div>
+<p id="instruction">胸骨圧迫を行ってください（30回）</p>
+<p id="counter">0 / 30</p>
+<p id="score">Score: 0</p>
+
+<div id="lane">
+  <div id="judge-line"></div>
 </div>
+
+<div id="chest">胸をタップ</div>
+
+<p id="result"></p>
+
+<hr>
+
+<p class="note">
+このゲームは学習用です。<br>
+実際の救命では人工呼吸を行わず、胸骨圧迫のみを推奨される場合があります。
+</p>
 
 <script src="script.js"></script>
 </body>
